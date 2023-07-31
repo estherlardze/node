@@ -1,5 +1,8 @@
 #!/usr/bin/env node 
  const inquirer = require("inquirer");
+ const os = require("os")
+
+ console.log(os.cpus().length)
 
 const fetchPokemom = async (name) => {
  await fetch(`https://pokeapi.co/api/v2/berry/${name}`)
