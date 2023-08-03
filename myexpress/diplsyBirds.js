@@ -1,9 +1,14 @@
 const express = require("express")
 const app = express()
-const birds = require("./birds")
-const port = 3000
 
 
-const server = app.use("./birds", birds)
+const appname = function(req, res, next){
+    console.log("Recieved request at:", new Date())
+    next()
+}
 
-server.listen(`server is running on port ${port}`)
+app.use(appname)
+
+app.get("/", function(req, res){
+   res.send("Hello from next app")
+}).listen(3000, console.log("Server is running on port 3000"))
