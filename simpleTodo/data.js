@@ -1,33 +1,37 @@
-const todos = [
+ const users = [
     {
       id: 1,
-      desc: "This is my first Todo",
-      completed: true,
+      firstName : "John",
+      lastName: "Doe",
+      age: 12
     },
   
     {
       id:2,
-      desc: "This is my second Todo",
-      completed: true,
+      firstName : "Esther",
+      lastName: "Larde",
+      age: 15
     },
   
     {
       id: 3,
-      desc: "This is my third Todo",
-      completed: true,
+      firstName : "Tine",
+      lastName: "Odzao",
+      age: 8
     },
   
     {
       id: 4,
-      desc: "This is my fourth Todo",
-      completed: true,
+      firstName : "Bruce",
+      lastName: "Lee",
+      age: 27
     },
   
     {
       id: 5,
-      desc: "This is my fifth Todo",
-      completed: true,
+      firstName : "Johnny",
+      lastName: "Doe",
+      age: 34
     },
   ];
-
-  module.exports = todos;
+  export default users
