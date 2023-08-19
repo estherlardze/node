@@ -23,7 +23,7 @@ export const createUser = (req, res) => {
 }
 
 export const updateUserInfo = (req, res) => {
-    const user = users.find((item )=> item.id === parseInt(req.params.id))
+    const user = users.find((item ) => item.id === parseInt(req.params.id))
 
     if(user){
         const {id, firstName, lastName, age } = req.body;
