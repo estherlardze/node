@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(252, 250, 253);
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 80vh;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(221, 114, 114);
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image-container{
+    margin-right: 20px;
+}
+.image{
+    width: 400px;
+}
+
+@keyframes scrolltop {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-400px * 5));
+    }
+  }
+
+  .slideTop {
+    animation: scrolltop 50s linear infinite;
+  }

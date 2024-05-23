@@ -1,10 +1,25 @@
-const express = require("express")
-const app  = express()
-const port = 3000
+import express from "express";
+import { users } from "./data.js";
+const app = express();
+const port = 3000;
 
-const server = app.get('/plantae/:genus', (req, res) => {
-    const specie = req.params.genus
-    res.send(`Genus name in ${specie}`)
-})  
+app.get("/users", (req, res) => {
+  res.send(users);
+});
 
- server.listen(port, console.log(`server is listening on port ${port}`))
+app.get("/users/:userId", (req, res) => {
+  const parsedId = parseInt(req.params.userId);
+  const selectedUser = users.find((user) => user._id === parsedId);
+
+  if (isNaN(parsedId)) {
+    return res.status(404).send("Invalid Id");
+  }
+
+  if (!selectedUser) {
+    return res.status(404).send("User not found");
+  } else {
+    res.send(selectedUser);
+  }
+});
+
+app.listen(port, console.log(`server is listening on port ${port}`));

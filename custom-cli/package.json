@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "bin": {
     "custom-cli": "index.js"
@@ -13,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.5"
+    "inquirer": "^8.2.5",
+    "nodemon": "^3.1.0"
   }
 }
