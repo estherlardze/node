@@ -1,0 +1,1 @@
+export const mongoDbUri = "mongodb+srv://odzaoe:LkVQ1wPjbtEyzw5D@bookstore-mernstack.6q2kcvg.mongodb.net/books-collection?retryWrites=true&w=majority&appName=bookstore-mernstack";

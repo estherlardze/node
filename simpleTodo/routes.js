@@ -5,9 +5,12 @@ export const getUsers = (req, res ) => {
 }
 
 export const getUser = (req, res) => {
-
-    const user = users.find((item ) => item.id === parseInt(req.params.id))
-
+    const user = users.find((user ) => user.id === parseInt(req.params.id))
+    
+    if(isNaN(parseInt(req.params.id))){
+        res.status(404).json({massage: "Invalid Id"})
+    }
+    
     if(user){
       res.status(200).json(user)
     }
