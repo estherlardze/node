@@ -5,7 +5,7 @@ const router = express.Router()
 
 // get all workouts
 router.get('/', (req, res) => {
-    res.send('hello get')
+    res.send('hello get all')
 })
 
 // get a single workout
@@ -19,8 +19,9 @@ router.post('/', async(req, res) => {
     const { title, reps, load } = req.body
 
      try {
-       const workout = WorkoutModel.create({title, reps, load})
+       const workout = await WorkoutModel.create({title, reps, load})
        res.status(200).json(workout)
+       console.log(workout)
      }
      catch(error) {
         res.status(400).json({error: error.message})
