@@ -41,7 +41,7 @@ export const createWorkout = async (req, res) => {
 };
 
 
-// modify a workout
+// delete a workout
 export const deleteWorkout = async (req, res) => {
   const { id } = req.params;
 
@@ -58,7 +58,7 @@ export const deleteWorkout = async (req, res) => {
 };
 
 
-// delete a workout
+// update a workout
 export const updateWorkout = async (req, res) => {
   const { id } = req.params;
 
