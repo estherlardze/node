@@ -1,1 +1,1 @@
-repo to track my backend journey 
+a mini crud application using mernstack
