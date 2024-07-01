@@ -74,3 +74,27 @@
   font-style: italic;
 
 }
+
+.edit-popup{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(13, 11, 11, 0.5);
+  z-index: 1000;
+}
+.edit-popup-form{
+  background-color: white;
+  padding: 20px;
+}
+.edit-popup-form input{
+  outline: none;
+  border: 1px solid black;
+  padding: 4px 10px;
+}

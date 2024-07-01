@@ -52,7 +52,7 @@ const WorkoutForm = () => {
           <label htmlFor="title">Exersice title:</label>
           <input
             type="text"
-            placeholder="workout title"
+            placeholder=" title"
             id="title"
             name="title"
             value={title}
@@ -63,7 +63,7 @@ const WorkoutForm = () => {
           <label htmlFor="reps">Exersice reps:</label>
           <input
             type="text"
-            placeholder="workout reps"
+            placeholder=" repeatition"
             id="reps"
             name="reps"
             value={reps}
@@ -74,7 +74,7 @@ const WorkoutForm = () => {
           <label htmlFor="load">Exersice load:</label>
           <input
             type="text"
-            placeholder="workout load"
+            placeholder="load"
             id="load"
             name="load"
             value={load}
